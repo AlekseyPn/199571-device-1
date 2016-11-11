@@ -1,7 +1,7 @@
-# Личный проект «Девайс»
+# Личный проект «Глейси»
 
 * Студент: [Алексей Пересмехин](https://up.htmlacademy.ru/htmlcss/14/user/199571).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Болтян](https://up.htmlacademy.ru/htmlcss/14/user/83202).
 
 ---
 
@@ -18,13 +18,13 @@ _`.editorconfig`, `.gitignore`, `Contributing.md`, `Readme.md`._
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/199571-device) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/199571-gllacy) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
 
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/17298668/fb1e7650-581b-11e6-889b-a7004419eaf2.png">
+<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/12391926/4aaa72b0-bdfc-11e5-9324-e0597e8e0084.jpg">
 
 Получится вот так:
 
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/17298667/fb195e68-581b-11e6-88b2-e908810fd394.png">
+<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/12391927/4ad24f1a-bdfc-11e5-83e9-eb692950a6e5.jpg">
 
 #### 3. Клонируйте репозиторий на свой компьютер
 
