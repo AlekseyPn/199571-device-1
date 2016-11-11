@@ -1,221 +1,262 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
+    <title>Девайс</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
-    <input class="btn-1" type="radio" name="btn-slide" id="btn-1" checked>
-    <input class="btn-2" type="radio" name="btn-slide" id="btn-2">
-    <input class="btn-3" type="radio" name="btn-slide" id="btn-3">
-    <div class="page-wrapper">
-      <!-- Шапка -->
-      <header class="main-header">
-       <div class="container clearfix">
-        <nav class="header-nav">
-         <a class="index-logo" href="#">
-                <img class="logo-img" src="img/logo-index.svg" alt="Глейси-шоп" width="154"  height="64">
-          </a>
-          <ul>
-            <li class="nav-item sub-item"><a class="active-item" href="catalog.html">Каталог</a>
-              <ul class="sub-menu">
-                <li class="new-good"><a  href="#">Новинки</a>
-                </li>
-                <li><a href="catalog.html">Сливочное</a></li>
-                <li><a href="catalog-sherb.html">Щербеты</a></li>
-                <li><a href="catalog-fruit.html">Фруктовый лед</a></li>
-                <li><a href="catalog-melor.html">Мелорин</a></li>
-              </ul>
-            </li>
-            <li class="nav-item"><a href="#">Доставка и оплата</a></li>
-            <li class="nav-item"><a href="#">О Компании</a></li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <div class="search-box user-item">
-            <a class="search-btn" href="#">Поиск</a>
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <input type="search" name="search-form" id="search-form" required>
-              <label class="label-search" for="search-form">Что ищем?</label>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="page-header container clearfix">
+        <h1 class="logo"><a href="#" class="logo__link">DEVICE</a></h1>
+        <div class="site-search">
+            <form class="site-search__form" action="#" method="GET">
+                <label for="search">Найти товар</label>
+                <input class="site-search__input" type="search" name="search" id="search" placeholder="Поиск по сайту">
+                <button class="site-search__button" type="submit">Найти</button>
             </form>
-          </div>
-          <div class="login-box user-item">
-            <a class="user-login" href="#">Вход</a>
-            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-              <input type="email" name="email" id="email-login" required>
-              <label class="label-email" for="email-login">Электронная почта</label>
-              <input type="password" name="password" id="password-login" required>
-              <label class="label-pass" for="password-login">Пароль</label>
-              <button class="btn btn-login" type="submit">Войти</button>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
-            </form>
-          </div>
-          <div class="user-basket user-item">Пусто</div>
-        <div class="header-contact">
-          <p>С 10 до 20,ежедневно</p>
-          <a href="tel:+88124502525">8 812 450-25-25</a>
         </div>
-       </div>
-      </div>
-     </header>
-
-      <!-- Слайдер -->
-      <div class="container">
-        <div class="slider">
-          <div class="slide slide-1" id="slide-1">
-            <div class="slide-title">Крем-брюле и пломбир
-  с малиновым джемом</div>
-            <a href="bonus.html" class="slide-btn">Давайте оба!</a>
-          </div>
-          <div class="slide slide-2" id="slide-2">
-            <div class="slide-title">Шоколадный пломбир
-  и лимонный сорбет </div>
-            <a href="bonus.html" class="slide-btn">Давайте оба!</a>
-          </div>
-          <div class="slide slide-3" id="slide-3">
-            <div class="slide-title">Пломбир с помадкой
-  и клубничный щербет</div>
-            <a href="bonus.html" class="slide-btn">Давайте оба!</a>
-          </div>
-          <div class="slide-control">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
-          </div>
+        <div class="user clearfix">
+            <a href="#" class="user__item user__item--login">Войти</a>
+            <a href="#" class="user__item user__item--basket">Корзина</a>
+            <a href="#" class="user__item user__item--compare">Сравнить</a>
         </div>
-      </div>
-      <!-- Главный контент -->
-      <main class="container">
-        <div class="index-content clearfix">
-          <div class="index-content-left bonus-box">
-            <p class="bonus-head">Малинка даром!</p>
-            <p class="bonus-text">При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a class="btn bonus-btn" href="bonus.html">Хочу варенье!</a>
-          </div>
-          <div class="index-content-right bonus-box">
-            <p class="bonus-head">Шоколадки даром!</p>
-            <p class="bonus-text">При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <a class="btn bonus-btn" href="bonus.html">Хочу шоколадки!</a>
-          </div>
+        <div class="menu clearfix">
+            <nav class="menu__catalog">
+                <ul>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Каталог товаров</a>
+                        <ul class="sub-menu">
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">Виртуальная реальность</a>
+                                <a href="device-catalog.html" class="sub-menu__link">Моноподы для селфи</a>
+                                <a href="#" class="sub-menu__link">Экшн-камеры</a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">Фитнесс-браслеты</a>
+                                <a href="#" class="sub-menu__link">Умные часы</a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a href="#" class="sub-menu__link">Квадрокоптеры</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="menu__service">
+                <li class="menu__item"><a href="#" class="menu__link">Доставка</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Гарантия</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+            </ul>
         </div>
-        <section class="product-box clearfix">
-          <article class="product-item">
-            <div class="item-price">
-              <img src="img/yellow-ic.png" alt="Хит-мороженко" width="267" height="267">
-              <p>310<span class="product-value">/кг</span></p>
+    </header>
+    <main>
+        <div class="slider container">
+            <input class="slider__radio slider__radio--1" type="radio" name="radio" id="slider-btn-1" checked>
+            <input class="slider__radio slider__radio--2" type="radio" name="radio" id="slider-btn-2">
+            <input class="slider__radio slider__radio--3" type="radio" name="radio" id="slider-btn-3">
+            <div class="slider__controls">
+                <label for="slider-btn-1" class="slider__btn"></label>
+                <label for="slider-btn-2" class="slider__btn"></label>
+                <label for="slider-btn-3" class="slider__btn"></label>
             </div>
-              <a class="desc-link" href="catalog-item.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-          </article>
-          <article class="product-item">
-            <div class="item-price">
-              <img src="img/choko-ic.png" alt="Хит-мороженко" width="267" height="267">
-              <p>380<span class="product-value">/кг</span></p>
+            <div class="slider__slides">
+                <h2 class="slider__title">Делай селфи,<br> как Бен Стиллер!</h2>
+                <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                </p>
+                <a href="#" class="slider__link btn">Подробнее</a>
+                <div class="features">
+                    <p class="features__record">8,5 м
+                        <span class="features__desc">Длина палки</span>
+                    </p>
+                    <p class="features__record">
+                        5 кг
+                        <span class="features__desc">Вес палки</span>
+                    </p>
+                    <p class="features__record">
+                        Карбон
+                        <span class="features__desc">Материал</span>
+                    </p>
+                </div>
             </div>
-              <a class="desc-link" href="catalog-item.html">Сливочно-кофейное с кусочками шоколада</a>
-          </article>
-          <article class="product-item">
-            <div class="item-price">
-              <img src="img/pink-ic.png" alt="Хит-мороженко" width="267" height="267">
-              <p>355<span class="product-value">/кг</span></p>
+            <div class="slider__slides">
+                <h2 class="slider__title">Худеем<br> правильно!
+                </h2>
+                <p class="slider__text">Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <a href="#" class="slider__link btn">Подробнее</a>
+                <div class="features">
+                    <p class="features__record">
+                        48 часов
+                        <span class="features__desc">Без подзарядки</span>
+                    </p>
+                </div>
             </div>
-              <a class="desc-link" href="catalog-item.html">Сливочно-клубничное с присыпкой из белого шоколада</a>
-          </article>
-          <article class="product-item">
-            <div class="item-price">
-              <img src="img/caram-ic.png" alt="Хит-мороженко" width="267" height="267">
-              <p>415<span class="product-value">/кг</span></p>
+            <div class="slider__slides">
+                <h2 class="slider__title">Порхает как бабочка,<br> жалит как пчела!</h2>
+                <p class="slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+                </p>
+                <a href="#" class="slider__link btn">Подробнее</a>
+                <div class="features">
+                    <p class="features__record">
+                        800 м
+                        <span class="features__desc">Дальность полета</span>
+                    </p>
+                    <p class="features__record">
+                        50 м
+                        <span class="features__desc">Радиус поражения</span>
+                    </p>
+                </div>
             </div>
-              <a class="desc-link" href="catalog-item.html">Сливочное крем-брюле с карамельной подливкой</a>
-          </article>
-        </section>
-        <section class="about-shop">
-            <h1>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
-              <p class="about-text ic-img">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-              <p class="about-text cow-img">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-              <p class="about-text sheet-img">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
-              <p class="about-text term-img">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-
-        </section>
-        <div class="index-content clearfix">
-          <div class="index-content-left news-box">
-            <h2>Новости в нашем блоге</h2>
-            <a href="news.html">10  способов сервировки фруктовых щербетов к столу</a>
-          </div>
-          <div class="index-content-right subscribe-box">
-            <div class="form-wrap">
-              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
-              <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-                <input type="email" name="email" id="email" required >
-                <label class="subscr-email" for="email">Электронная почта</label>
-
-                <button class="btn form-btn" type="submit">Отправить</button>
-              </form>
-            </div>
-          </div>
         </div>
-      </main>
-      <div class="map-box">
-          <img class="map-img" src="img/map.jpg" alt="Местоположение магазина" width="1200" height="436">
-          <div class="about-comp">
-            <p>Адрес главного офиса и <br>офлайн магазина:</p>
-            <p>ул. Большая Конюшенная<br> 19/8, Санкт-Петербург</p>
-            <p>Для заказов по телефону:</p>
-            <p>8 812 450-25-25</p>
-            <p>(с 10 до 20 ежедневно)</p>
-            <a class="btn feedback-btn" href="feedback.html">Форма обратной связи</a>
-          </div>
-        </div>
-      <!-- Footer -->
-      <footer class="main-footer">
-       <div class="container clearfix">
-          <div class="footer-social">
-            <a class="social-link link-tw" href="#" >tw</a>
-            <a class="social-link link-inst" href="#">inst</a>
-            <a class="social-link link-fb" href="#" >fb</a>
-            <a class="social-link link-vk" href="#" >vk</a>
-          </div>
-           <div class="footer-documents">
-            <div class="document-item">
-              <a class="img-heart" href="#">Для поставщиков</a>
-              <a href="#">О производстве</a>
+        <div class="popular">
+            <div class="popular__item">
+                <a href="#" class="popular__link">
+                    <div class="popular__picture"><img src="img/popular-1.png" alt="Виртуальная реальность" width="160" height="160"></div>
+                    <p class="popular__text">Виртуальная реальность</p>
+                </a>
             </div>
-            <div class="document-item">
-              <a href="#">Наши документы</a>
-              <a href="#">Экологические стандарты</a>
+            <div class="popular__item">
+                <a href="#" class="popular__link">
+                    <div class="popular__picture"><img src="img/popular-2.png" alt="Моноподы для селфи" width="160" height="160"></div>
+                    <p class="popular__text">Моноподы<br> для селфи</p>
+                </a>
             </div>
-          </div>
-          <div class="footer-copyright">
-            <a class="copyright-logo" href="https://htmlacademy.ru/"><img src="img/foot-logo.svg" alt="HTMLacademy"></a>
-            <p class="copyright-text">Сделано в <a href="https://htmlacademy.ru/">HTML Academy &copy;</a> 2016</p>
-          </div>
+            <div class="popular__item">
+                <a href="#" class="popular__link">
+                    <div class="popular__picture"><img src="img/popular-3.png" alt="Экшн-камеры" width="160" height="160"></div>
+                    <p class="popular__text">Экшн-камеры</p>
+                </a>
+            </div>
+            <div class="popular__item">
+                <a href="#" class="popular__link">
+                    <div class="popular__picture"><img src="img/popular-4.png" alt="Фитнес браслеты" width="160" height="160"></div>
+                    <p class="popular__text">Фитнес<br> браслеты</p>
+                </a>
+            </div>
+            <div class="popular__item">
+                <a href="#" class="popular__link">
+                    <div class="popular__picture"><img src="img/popular-5.png" alt="Умные часы" width="160" height="160"></div>
+                    <p class="popular__text">Умные часы</p>
+                </a>
+            </div>
+            <div class="popular__item">
+                <a href="#" class="popular__link">
+                    <div class="popular__picture"><img src="img/popular-6.png" alt="Квадрокоптеры" width="160" height="160"></div>
+                    <p class="popular__text">Квадрокоптеры</p>
+                </a>
+            </div>
         </div>
-      </footer>
-    </div>
-    <div class="modal-feedback">
-      <button class="modal-close" type="button" title="Закрыть"></button>
-      <p>Мы обязательно вам ответим!</p>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <input class="feedback-input feedback-name" type="text" name="your-name" id="name-input" required>
-        <label for="name-input">Как вас зовут?</label>
-
-        <input class="feedback-input feedback-email" type="email" name="email" id="email-input" required>
-        <label for="email-input">Ваша почта для ответа?</label>
-
-        <textarea class="feedback-input feedback-text" name="text" cols="30" rows="10" id="text-input" required></textarea>
-        <label for="text-input">Напишите что нибудь...</label>
-
-        <button class="btn feedback-btn" type="submit">Отправить</button>
-      </form>
+        <div class="service">
+            <div class="container clearfix">
+                <input class="service__radio--1" type="radio" name="service-tab" id="service-tab-1" checked>
+                <input class="service__radio--2" type="radio" name="service-tab" id="service-tab-2">
+                <input class="service__radio--3" type="radio" name="service-tab" id="service-tab-3">
+                <div class="service__controls">
+                    <label for="service-tab-1" class="service__item">Доставка</label>
+                    <label for="service-tab-2" class="service__item">Гарантия</label>
+                    <label for="service-tab-3" class="service__item">Кредит</label>
+                </div>
+                <div class="service__desc service__desc--deliver">
+                    <h2 class="service__title">Доставка</h2>
+                    <p class="service__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                </div>
+                <div class="service__desc service__desc--warranty">
+                    <h2 class="service__title">Гарантия</h2>
+                    <p class="service__text">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                </div>
+                <div class="service__desc service__desc--credit">
+                    <h2 class="service__title">Кредит</h2>
+                    <p class="service__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                </div>
+            </div>
+        </div>
+        <div class="vendor container">
+            <a href="#" class="vendor__link"><img src="img/logo-1.jpg" alt="DJI" class="vendor__picture" width="260" height="100"></a>
+            <a href="#" class="vendor__link"><img src="img/logo-2.jpg" alt="SPGADGETS" class="vendor__picture" width="260" height="100"></a>
+            <a href="#" class="vendor__link"><img src="img/logo-3.jpg" alt="GoPro" class="vendor__picture" width="260" height="100"></a>
+            <a href="#" class="vendor__link"><img src="img/logo-4.jpg" alt="<VIVE></VIVE>" class="vendor__picture" width="260" height="100"></a>
+        </div>
+        <div class="company container clearfix">
+            <div class="company__about-us company__about-us--line">
+                <h2 class="company__title">О нас</h2>
+                <p class="company__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+                <p class="company__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+                <ul class="company__list">
+                    <li class="company__item">
+                        <a href="#" class="company__link">Деловые линии</a>
+                    </li>
+                    <li class="company__item">
+                        <a href="#" class="company__link">Автотрейдинг</a>
+                    </li>
+                    <li class="company__item">
+                        <a href="#" class="company__link">ЖелДорЭкспедиция</a>
+                    </li>
+                </ul>
+                <a href="#" class="company__btn">Подробнее о нас</a>
+            </div>
+            <div class="company__contact company__contact--line">
+                <h2 class="company__title">Контакты</h2>
+                <p class="company__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+                <div class="company__map"><img src="img/map-picture.jpg" alt="Карта" class="company__picture"></div>
+                <a href="#" class="company__btn company__btn--modal">Напишите нам</a>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container clearfix">
+            <div class="logo logo--float">
+                <a href="#" class="logo__link logo__link--ylw">DEVICE</a>
+            </div>
+            <div class="user">
+                <a href="#" class="user__item user__item--login">Войти</a>
+                <a href="#" class="user__item user__item--basket">Корзина</a>
+                <a href="#" class="user__item user__item--compare">Сравнить</a>
+            </div>
+            <p class="address">г. Москва, ул. Строителей, 15
+            </p>
+            <nav class="menu">
+                <ul>
+                    <li class="menu__item"><a href="#" class="menu__link">Доставка</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Гарантия</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <p class="tel">Тел.:<a href="tel:+74954959595" class="tel__link">+7 (495) 495-95-95</a></p>
+            <div class="social clearfix">
+                <a href="#" class="social__link social__link--fb">Facebook</a>
+                <a href="#" class="social__link social__link--inst">Instagram</a>
+                <a href="#" class="social__link social__link--tw">Twitter</a>
+                <a href="#" class="social__link social__link--academy">HTML-academy</a>
+            </div>
+        </div>
+    </footer>
+    <div class="modal-contents">
+        <button type="button" class="modal-contents__close">Закрыть</button>
+        <form action="#" class="modal-contents__form" method="GET">
+            <p>
+                <label for="form-name">Ваше имя:</label>
+                <input type="text" name="name" id="form-name" placeholder="Представьтесь, пожалуйста">
+            </p>
+            <p>
+                <label for="form-email">Ваш e-mail:</label>
+                <input type="email" name="email" id="form-email" placeholder="Для отправки ответа">
+            </p>
+            <label for="form-textarea">Текст письма:</label>
+            <textarea name="textarea" id="form-textarea" cols="30" rows="10" class="modal-contents__textarea" placeholder="В свободной форме"></textarea>
+            <button class="modal-contents__submit" type="submit">Отправить</button>
+        </form>
     </div>
     <div class="modal-map">
-      <button class="modal-close modal-map-close" type="button" title="Закрыть"></button>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123607!2d30.320894615607262!3d59.93879686904854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1472576143500" width="1134" height="422" allowfullscreen></iframe>
+        <button type="button" class="modal-map__close">Закрыть</button>
+        <div class="modal-map__iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473654!2d37.527429316022086!3d55.68703400452984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1475842101854"
+                width="994" height="593" allowfullscreen></iframe>
+        </div>
     </div>
-
     <div class="modal-overlay"></div>
     <script src="js/script.min.js"></script>
-  </body>
+</body>
+
 </html>
