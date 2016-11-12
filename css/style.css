@@ -1,12 +1,3 @@
-/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
-
-
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
- */
-
 html {
     font-family: sans-serif;
     /* 1 */
@@ -653,7 +644,7 @@ ul li {
 }
 
 .site-search__input {
-    width: 98%;    
+    width: 98%;
     height: 53px;
     padding-top: 5px;
     padding-left: 40px;
@@ -666,6 +657,14 @@ ul li {
     outline: none;
     border: none;
     box-sizing: border-box;
+}
+
+.site-search__input:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.site-search__input:focus {
+    color: rgba(0, 0, 0, 1);
 }
 
 .site-search__input:focus,
@@ -1447,7 +1446,7 @@ ul li {
 
 .page-footer .menu {
     float: left;
-    width: 38.79310345%;
+    width: 40%;
     font-size: 0;
     margin-top: 29px;
     padding: 0 4px;
@@ -1777,7 +1776,6 @@ ul li {
 .filter__item:last-of-type {
     margin-bottom: 27px;
 }
-
 
 .filter__title {
     width: 75%;
@@ -2230,15 +2228,18 @@ ul li {
     font-weight: 300;
     font-family: "OpenSans-Light", sans-serif;
     background: #f2f2f2;
+    color: rgba(0, 0, 0, 0.4);
     border: none;
     outline: none;
 }
 
 .modal-contents__form input:hover {
+    color: rgba(0, 0, 0, 0.4);
     background: #ebebeb;
 }
 
 .modal-contents__form input:focus {
+    color: rgba(0, 0, 0, 1);
     outline: 2px solid #e5e5e5;
     background: #fff;
 }
